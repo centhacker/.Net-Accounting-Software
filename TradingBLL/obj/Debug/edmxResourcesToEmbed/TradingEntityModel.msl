@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TradingModelStoreContainer" CdmEntityContainer="TradingEntities">
+    <EntitySetMapping Name="Account_Transaction">
+      <EntityTypeMapping TypeName="TradingModel.Account_Transaction">
+        <MappingFragment StoreEntitySet="Account_Transaction">
+          <ScalarProperty Name="credit" ColumnName="credit" />
+          <ScalarProperty Name="debit" ColumnName="debit" />
+          <ScalarProperty Name="payment_no" ColumnName="payment_no" />
+          <ScalarProperty Name="PAYMENT" ColumnName="PAYMENT" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Acc_id" ColumnName="Acc_id" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+          <ScalarProperty Name="ref_no" ColumnName="ref_no" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="acc_total" ColumnName="acc_total" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANKs">
+      <EntityTypeMapping TypeName="TradingModel.BANK">
+        <MappingFragment StoreEntitySet="BANK">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACC_NO" ColumnName="ACC_NO" />
+          <ScalarProperty Name="ACC_NAME" ColumnName="ACC_NAME" />
+          <ScalarProperty Name="ACC_TYPE" ColumnName="ACC_TYPE" />
+          <ScalarProperty Name="ACC_BALANCE" ColumnName="ACC_BALANCE" />
+          <ScalarProperty Name="BRANCH" ColumnName="BRANCH" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="BRANCH_CODE" ColumnName="BRANCH_CODE" />
+          <ScalarProperty Name="BANK_NO" ColumnName="BANK_NO" />
+          <ScalarProperty Name="BANK_EMAIL" ColumnName="BANK_EMAIL" />
+          <ScalarProperty Name="E_DATE" ColumnName="E_DATE" />
+          <ScalarProperty Name="M_DATE" ColumnName="M_DATE" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BUYERs">
+      <EntityTypeMapping TypeName="TradingModel.BUYER">
+        <MappingFragment StoreEntitySet="BUYER">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="BUYER_ID" ColumnName="BUYER_ID" />
+          <ScalarProperty Name="BUYER_NAME" ColumnName="BUYER_NAME" />
+          <ScalarProperty Name="BUYER_CONTACT" ColumnName="BUYER_CONTACT" />
+          <ScalarProperty Name="BUYER_EMAIL" ColumnName="BUYER_EMAIL" />
+          <ScalarProperty Name="BUYER_ACCOUNT" ColumnName="BUYER_ACCOUNT" />
+          <ScalarProperty Name="BUYER_COMPANY" ColumnName="BUYER_COMPANY" />
+          <ScalarProperty Name="BUYER_REMARKS" ColumnName="BUYER_REMARKS" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="TradingModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exchanges">
+      <EntityTypeMapping TypeName="TradingModel.Exchange">
+        <MappingFragment StoreEntitySet="Exchange">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CId_To" ColumnName="CId_To" />
+          <ScalarProperty Name="CId_From" ColumnName="CId_From" />
+          <ScalarProperty Name="Ex_Rate" ColumnName="Ex_Rate" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Frieghts">
+      <EntityTypeMapping TypeName="TradingModel.Frieght">
+        <MappingFragment StoreEntitySet="Frieght">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventories">
+      <EntityTypeMapping TypeName="TradingModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="prd_cost" ColumnName="prd_cost" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="ship_prd_id" ColumnName="ship_prd_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+          <ScalarProperty Name="prd_quantity" ColumnName="prd_quantity" />
+          <ScalarProperty Name="ship_date" ColumnName="ship_date" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="TradingModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoices">
+          <ScalarProperty Name="pck" ColumnName="pck" />
+          <ScalarProperty Name="in_paid" ColumnName="in_paid" />
+          <ScalarProperty Name="ex_rate" ColumnName="ex_rate" />
+          <ScalarProperty Name="currency_total" ColumnName="currency_total" />
+          <ScalarProperty Name="in_currency" ColumnName="in_currency" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="SH_id" ColumnName="SH_id" />
+          <ScalarProperty Name="in_type" ColumnName="in_type" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+          <ScalarProperty Name="in_total" ColumnName="in_total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDERs">
+      <EntityTypeMapping TypeName="TradingModel.ORDER">
+        <MappingFragment StoreEntitySet="ORDER">
+          <ScalarProperty Name="invoice" ColumnName="invoice" />
+          <ScalarProperty Name="order_total" ColumnName="order_total" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
+          <ScalarProperty Name="BUYER_ID" ColumnName="BUYER_ID" />
+          <ScalarProperty Name="order_name" ColumnName="order_name" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="required_date" ColumnName="required_date" />
+          <ScalarProperty Name="shipped_date" ColumnName="shipped_date" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="TradingModel.Payment">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTs">
+      <EntityTypeMapping TypeName="TradingModel.PRODUCT">
+        <MappingFragment StoreEntitySet="PRODUCT">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRD_NAME" ColumnName="PRD_NAME" />
+          <ScalarProperty Name="PRD_CP" ColumnName="PRD_CP" />
+          <ScalarProperty Name="PRD_SP" ColumnName="PRD_SP" />
+          <ScalarProperty Name="PRD_DESC" ColumnName="PRD_DESC" />
+          <ScalarProperty Name="PRD_CATEGORY" ColumnName="PRD_CATEGORY" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHIP_PRD">
+      <EntityTypeMapping TypeName="TradingModel.SHIP_PRD">
+        <MappingFragment StoreEntitySet="SHIP_PRD">
+          <ScalarProperty Name="units" ColumnName="units" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="Ship_id" ColumnName="Ship_id" />
+          <ScalarProperty Name="SHIP_PRD_ID" ColumnName="SHIP_PRD_ID" />
+          <ScalarProperty Name="PRD_ID" ColumnName="PRD_ID" />
+          <ScalarProperty Name="PRD_CP" ColumnName="PRD_CP" />
+          <ScalarProperty Name="PRD_REMARKS" ColumnName="PRD_REMARKS" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHIP_SUPP">
+      <EntityTypeMapping TypeName="TradingModel.SHIP_SUPP">
+        <MappingFragment StoreEntitySet="SHIP_SUPP">
+          <ScalarProperty Name="ship_payment" ColumnName="ship_payment" />
+          <ScalarProperty Name="Ship_name" ColumnName="Ship_name" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="shipment_type" ColumnName="shipment_type" />
+          <ScalarProperty Name="service_charges" ColumnName="service_charges" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="SHIP_SUPP_ID" ColumnName="SHIP_SUPP_ID" />
+          <ScalarProperty Name="SUPP_ID" ColumnName="SUPP_ID" />
+          <ScalarProperty Name="frieght_id" ColumnName="frieght_id" />
+          <ScalarProperty Name="SUPP_REMARKS" ColumnName="SUPP_REMARKS" />
+          <ScalarProperty Name="payment_type" ColumnName="payment_type" />
+          <ScalarProperty Name="py_type_id" ColumnName="py_type_id" />
+          <ScalarProperty Name="sh_total" ColumnName="sh_total" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPLIERs">
+      <EntityTypeMapping TypeName="TradingModel.SUPPLIER">
+        <MappingFragment StoreEntitySet="SUPPLIER">
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="SUPP_ID" ColumnName="SUPP_ID" />
+          <ScalarProperty Name="SUPP_NAME" ColumnName="SUPP_NAME" />
+          <ScalarProperty Name="SUPP_CONTACT" ColumnName="SUPP_CONTACT" />
+          <ScalarProperty Name="SUPP_EMAIL" ColumnName="SUPP_EMAIL" />
+          <ScalarProperty Name="SUPP_COMPANY" ColumnName="SUPP_COMPANY" />
+          <ScalarProperty Name="SUPP_REMARKS" ColumnName="SUPP_REMARKS" />
+          <ScalarProperty Name="E_DATE" ColumnName="E_DATE" />
+          <ScalarProperty Name="M_DATE" ColumnName="M_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TradingModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ShowProducts" FunctionName="TradingModel.Store.ShowProducts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexProducts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT NAME" />
+          <ScalarProperty Name="COST_PRICE" ColumnName="COST PRICE" />
+          <ScalarProperty Name="SALE_PRICE" ColumnName="SALE PRICE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertProduct" FunctionName="TradingModel.Store.InsertProduct" />
+    <FunctionImportMapping FunctionImportName="UpdateProduct" FunctionName="TradingModel.Store.UpdateProduct" />
+    <FunctionImportMapping FunctionImportName="DeleteProduct" FunctionName="TradingModel.Store.DeleteProducts" />
+    <FunctionImportMapping FunctionImportName="ShowBuyer" FunctionName="TradingModel.Store.ShowBuyers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexBuyer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CONTACT" ColumnName="CONTACT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertBuyer" FunctionName="TradingModel.Store.InsertBuyer" />
+    <FunctionImportMapping FunctionImportName="UpdateBuyer" FunctionName="TradingModel.Store.UpdateBuyer" />
+    <FunctionImportMapping FunctionImportName="DeleteBuyer" FunctionName="TradingModel.Store.DeleteBuyers" />
+    <FunctionImportMapping FunctionImportName="ShowFreight" FunctionName="TradingModel.Store.ShowFreight">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexFreight">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="REFRENCE" ColumnName="REFRENCE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertFreight" FunctionName="TradingModel.Store.InsertFreight" />
+    <FunctionImportMapping FunctionImportName="UpdateFreight" FunctionName="TradingModel.Store.UpdateFrieght" />
+    <FunctionImportMapping FunctionImportName="DeleteFreight" FunctionName="TradingModel.Store.DeleteFrieght" />
+    <FunctionImportMapping FunctionImportName="ShowSupplier" FunctionName="TradingModel.Store.ShowSuppliers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexSupplier">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CONTACT" ColumnName="CONTACT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="E_DATE" ColumnName="E_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertSupplier" FunctionName="TradingModel.Store.InsertSuppliers" />
+    <FunctionImportMapping FunctionImportName="UpdateSupplier" FunctionName="TradingModel.Store.UpdateSuppliers" />
+    <FunctionImportMapping FunctionImportName="DeleteSupplier" FunctionName="TradingModel.Store.DeleteSupplier" />
+    <EntitySetMapping Name="UserLogins">
+      <EntityTypeMapping TypeName="TradingModel.UserLogin">
+        <MappingFragment StoreEntitySet="UserLogin">
+          <ScalarProperty Name="m_date" ColumnName="m_date" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CheckLogin" FunctionName="TradingModel.Store.CheckLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarLogin">
+          <ScalarProperty Name="password" ColumnName="password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertOrder" FunctionName="TradingModel.Store.InsertOrder" />
+    <FunctionImportMapping FunctionImportName="DeleteOrder" FunctionName="TradingModel.Store.DeleteOrder" />
+    <FunctionImportMapping FunctionImportName="ShowOrder" FunctionName="TradingModel.Store.ShowOrders">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexOrders">
+          <ScalarProperty Name="C_BUYER_" ColumnName="'BUYER'" />
+          <ScalarProperty Name="ORDER_NAME" ColumnName="ORDER NAME" />
+          <ScalarProperty Name="ORDER_DATE" ColumnName="ORDER DATE" />
+          <ScalarProperty Name="REQ_DATE" ColumnName="REQ DATE" />
+          <ScalarProperty Name="SHIP_DATE" ColumnName="SHIP DATE" />
+          <ScalarProperty Name="REFRENCE" ColumnName="REFRENCE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowBuyerNames" FunctionName="TradingModel.Store.ShowBuyerName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarBuyerNames">
+          <ScalarProperty Name="buyer_name" ColumnName="buyer_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertCurrency" FunctionName="TradingModel.Store.InsertCurrency" />
+    <FunctionImportMapping FunctionImportName="InsertExchangeRate" FunctionName="TradingModel.Store.InsertExchangeRate" />
+    <FunctionImportMapping FunctionImportName="ShowCurrency" FunctionName="TradingModel.Store.ShowCurrency">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexCurrency">
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowExchangeRates" FunctionName="TradingModel.Store.ShowExchangeRates">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexExRate">
+          <ScalarProperty Name="currency_to" ColumnName="currency_to" />
+          <ScalarProperty Name="currency_from" ColumnName="currency_from" />
+          <ScalarProperty Name="Ex_rate" ColumnName="Ex_rate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteCurrency" FunctionName="TradingModel.Store.DeleteCurrency" />
+    <FunctionImportMapping FunctionImportName="InsertPayments" FunctionName="TradingModel.Store.InsertPayments" />
+    <FunctionImportMapping FunctionImportName="ShowPayments" FunctionName="TradingModel.Store.ShowPayments">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexPayments">
+          <ScalarProperty Name="Payment_Types" ColumnName="Payment Types" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeletePayments" FunctionName="TradingModel.Store.DeletePayments" />
+    <FunctionImportMapping FunctionImportName="ShowFreightNames" FunctionName="TradingModel.Store.ShowFreightName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarFreightName">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowCurrencyNames" FunctionName="TradingModel.Store.ShowCurrencyNames">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarCurrencyNames">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowProductNames" FunctionName="TradingModel.Store.ShowProductNames">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarProductNames">
+          <ScalarProperty Name="prd_name" ColumnName="prd_name" />
+          <ScalarProperty Name="prd_cp" ColumnName="prd_cp" />
+          <ScalarProperty Name="prd_sp" ColumnName="prd_sp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowSupplierNames" FunctionName="TradingModel.Store.ShowSupplierNames">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarSupplierNames">
+          <ScalarProperty Name="supp_name" ColumnName="supp_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowPaymentNames" FunctionName="TradingModel.Store.ShowPaymentTypes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarPaymentNames">
+          <ScalarProperty Name="type" ColumnName="type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowProduct_SPCP" FunctionName="TradingModel.Store.ShowProductCP_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarProductCPSP">
+          <ScalarProperty Name="prd_cp" ColumnName="prd_cp" />
+          <ScalarProperty Name="prd_sp" ColumnName="prd_sp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Dummy" FunctionName="TradingModel.Store.Dummy" />
+    <FunctionImportMapping FunctionImportName="InsertShipmentSupplierWithInvoice" FunctionName="TradingModel.Store.InsertShipmentSupplierWithInvoice" />
+    <FunctionImportMapping FunctionImportName="InsertShipmentProduct" FunctionName="TradingModel.Store.InsertShipmentProduct" />
+    <FunctionImportMapping FunctionImportName="GetShipmentIdForInvoice" FunctionName="TradingModel.Store.GetShipmentIdForInvoice">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarShipmentId">
+          <ScalarProperty Name="ship_supp_id" ColumnName="ship_supp_id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowSupplierNameWithShipmentName" FunctionName="TradingModel.Store.ShowSupplierNameWithShipmentName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarSupplierNameWithShipmentName">
+          <ScalarProperty Name="SUPP_NAME" ColumnName="SUPP_NAME" />
+          <ScalarProperty Name="Ship_name" ColumnName="Ship_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Order_prod">
+      <EntityTypeMapping TypeName="TradingModel.Order_prod">
+        <MappingFragment StoreEntitySet="Order_prod">
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="payment_type" ColumnName="payment_type" />
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="prd_unit" ColumnName="prd_unit" />
+          <ScalarProperty Name="prd_sp" ColumnName="prd_sp" />
+          <ScalarProperty Name="prd_id" ColumnName="prd_id" />
+          <ScalarProperty Name="ord_id" ColumnName="ord_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="InsertOrderProducts" FunctionName="TradingModel.Store.InsertOrderProducts" />
+    <FunctionImportMapping FunctionImportName="ShowOrderDetails" FunctionName="TradingModel.Store.ShowOrderDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexOrderDetails">
+          <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+          <ScalarProperty Name="COST" ColumnName="COST" />
+          <ScalarProperty Name="UNITS" ColumnName="UNITS" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="PAYMENT" ColumnName="PAYMENT" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowOrderID" FunctionName="TradingModel.Store.ShowOrderID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarOrderID">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="DummyViews">
+      <EntityTypeMapping TypeName="TradingModel.DummyView">
+        <MappingFragment StoreEntitySet="DummyView">
+          <ScalarProperty Name="BUYER_EMAIL" ColumnName="BUYER_EMAIL" />
+          <ScalarProperty Name="BUYER_CONTACT" ColumnName="BUYER_CONTACT" />
+          <ScalarProperty Name="BUYER_NAME" ColumnName="BUYER_NAME" />
+          <ScalarProperty Name="BUYER_ID" ColumnName="BUYER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="UpdateOrder" FunctionName="TradingModel.Store.UpdateRecord" />
+    <FunctionImportMapping FunctionImportName="ShowBuyerNameWithOrderName" FunctionName="TradingModel.Store.ShowBuyerNameWithShipmentNameWithOrderName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarBuyerNameWithOrderName">
+          <ScalarProperty Name="BUYER" ColumnName="BUYER" />
+          <ScalarProperty Name="ORDER_NAME" ColumnName="ORDER NAME" />
+          <ScalarProperty Name="ORDER_TOTAL" ColumnName="ORDER TOTAL" />
+          <ScalarProperty Name="REF" ColumnName="REF" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CheckProductInInventory" FunctionName="TradingModel.Store.CheckProductInInventory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarProductQuantity">
+          <ScalarProperty Name="prd_quantity" ColumnName="prd_quantity" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertShipmentOrderWithInvoice" FunctionName="TradingModel.Store.InsertShipmentOrderWithInvoice" />
+    <FunctionImportMapping FunctionImportName="InsertOrderInventory" FunctionName="TradingModel.Store.InsertOrderInventory" />
+    <FunctionImportMapping FunctionImportName="ShowShipmentIDForOrders" FunctionName="TradingModel.Store.ShowShipmentIDForOrders">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarShipmentOrderID">
+          <ScalarProperty Name="ship_supp_id" ColumnName="ship_supp_id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowBuyerNameWithOrderNameWithShipmentNameForInvoice" FunctionName="TradingModel.Store.ShowBuyerNameWithShipmentNameWithOrderNameForInvoice">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.scalarBuyerNameOrderNameInvoice">
+          <ScalarProperty Name="BUYER_NAME" ColumnName="BUYER_NAME" />
+          <ScalarProperty Name="order_name" ColumnName="order_name" />
+          <ScalarProperty Name="Ship_name" ColumnName="Ship_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowLedgers" FunctionName="TradingModel.Store.ShowLedgers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarAccountType">
+          <ScalarProperty Name="type" ColumnName="type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CheckNameOfAccounts" FunctionName="TradingModel.Store.CheckNameOfChartOfAccounts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarAccountName">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertCharOfAccount" FunctionName="TradingModel.Store.InsertChartOfAccounts" />
+    <FunctionImportMapping FunctionImportName="DeleteChartOfAccounts" FunctionName="TradingModel.Store.DeleteChartOfAccounts" />
+    <FunctionImportMapping FunctionImportName="ShowChartOfAccounts" FunctionName="TradingModel.Store.ShowChartOfAccounts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexChartOfAccounts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_ID" ColumnName="ACCOUNT ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="OPENING_DATE" ColumnName="OPENING DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetAccountID" FunctionName="TradingModel.Store.GetAccountId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarAccountID">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertBank" FunctionName="TradingModel.Store.InsertBank" />
+    <FunctionImportMapping FunctionImportName="ShowBank" FunctionName="TradingModel.Store.ShowAccounts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.complexbank">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACC_NUMBER" ColumnName="ACC NUMBER" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="BRANCH" ColumnName="BRANCH" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="CONTACT_NUMBER" ColumnName="CONTACT NUMBER" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="OPENING_DATE" ColumnName="OPENING DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteBank" FunctionName="TradingModel.Store.DeleteBank" />
+    <FunctionImportMapping FunctionImportName="PaymentOfShipmentOrder" FunctionName="TradingModel.Store.PaymentOfShipmentORDER" />
+    <FunctionImportMapping FunctionImportName="PaymentOfShipmentSupplier" FunctionName="TradingModel.Store.PaymentOfShipmentSupplier" />
+    <FunctionImportMapping FunctionImportName="ShowInvoicesBuyer" FunctionName="TradingModel.Store.ShowInvoicesBuyer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexInvoicesBuyer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REFRENCE" ColumnName="REFRENCE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="EX_TOTAL" ColumnName="EX TOTAL" />
+          <ScalarProperty Name="EX_RATE" ColumnName="EX RATE" />
+          <ScalarProperty Name="PAID" ColumnName="PAID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowOrderPayments" FunctionName="TradingModel.Store.ShowOrdersForPayments">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexOrderPayments">
+          <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
+          <ScalarProperty Name="BUYER_NAME" ColumnName="BUYER_NAME" />
+          <ScalarProperty Name="order_name" ColumnName="order_name" />
+          <ScalarProperty Name="order_total" ColumnName="order_total" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowOrderDetailsPayments" FunctionName="TradingModel.Store.ShowOrderDetailsForPayments">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexOrderDetailPayments">
+          <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowInvoicesSupplier" FunctionName="TradingModel.Store.ShowInvoicesSupplier">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexInvoicesSupplier">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="REFRENCE" ColumnName="REFRENCE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="EX_TOTAL" ColumnName="EX TOTAL" />
+          <ScalarProperty Name="EX_RATE" ColumnName="EX RATE" />
+          <ScalarProperty Name="PAID" ColumnName="PAID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowInvoiceSupplierDetails" FunctionName="TradingModel.Store.ShowInvoiceSupplierDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexInvoiceSupplierDetails">
+          <ScalarProperty Name="SUPPLIER" ColumnName="SUPPLIER" />
+          <ScalarProperty Name="PRODUCTS" ColumnName="PRODUCTS" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="UNTIS" ColumnName="UNTIS" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertJournalAndPostings" FunctionName="TradingModel.Store.InsertJournalAndPosting" />
+    <FunctionImportMapping FunctionImportName="InsertFiscalYear" FunctionName="TradingModel.Store.InsertFiscalYear" />
+    <FunctionImportMapping FunctionImportName="UpdateFiscalYear" FunctionName="TradingModel.Store.UpdateFiscalYearOnlogin" />
+    <FunctionImportMapping FunctionImportName="ShowFiscalYear" FunctionName="TradingModel.Store.ShowFiscalYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexFiscalYear">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="f_from" ColumnName="f_from" />
+          <ScalarProperty Name="f_to" ColumnName="f_to" />
+          <ScalarProperty Name="e_date" ColumnName="e_date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AccountTransaction" FunctionName="TradingModel.Store.AccountTransaction" />
+    <FunctionImportMapping FunctionImportName="RefundInvoice" FunctionName="TradingModel.Store.REFUNDINVOICE" />
+    <FunctionImportMapping FunctionImportName="InsertPackingList" FunctionName="TradingModel.Store.InsertPackingList" />
+    <FunctionImportMapping FunctionImportName="ShowPackingList" FunctionName="TradingModel.Store.ShowPackingList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ScalarPackingList">
+          <ScalarProperty Name="pck" ColumnName="pck" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ShowProductsOfPackingList" FunctionName="TradingModel.Store.ShowProductsOfPackingList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexProductsOfPackingList">
+          <ScalarProperty Name="PRD_NAME" ColumnName="PRD_NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InventoryFilter" FunctionName="TradingModel.Store.InventoryGrid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TradingModel.ComplexInventoryGrid">
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="COST_PRICE" ColumnName="COST PRICE" />
+          <ScalarProperty Name="SALE_PRICE" ColumnName="SALE PRICE" />
+          <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="DEBIT" ColumnName="DEBIT" />
+          <ScalarProperty Name="CREDIT" ColumnName="CREDIT" />
+          <ScalarProperty Name="COST_TRANSACTION" ColumnName="COST TRANSACTION" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

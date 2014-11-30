@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TradingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TradingModelStoreContainer">
+    <EntitySet Name="Account_Transaction" EntityType="TradingModel.Store.Account_Transaction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BANK" EntityType="TradingModel.Store.BANK" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BUYER" EntityType="TradingModel.Store.BUYER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Currency" EntityType="TradingModel.Store.Currency" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Exchange" EntityType="TradingModel.Store.Exchange" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Frieght" EntityType="TradingModel.Store.Frieght" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory" EntityType="TradingModel.Store.Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoices" EntityType="TradingModel.Store.Invoices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ORDER" EntityType="TradingModel.Store.ORDER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order_prod" EntityType="TradingModel.Store.Order_prod" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payments" EntityType="TradingModel.Store.Payments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PRODUCT" EntityType="TradingModel.Store.PRODUCT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SHIP_PRD" EntityType="TradingModel.Store.SHIP_PRD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SHIP_SUPP" EntityType="TradingModel.Store.SHIP_SUPP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SUPPLIER" EntityType="TradingModel.Store.SUPPLIER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="TradingModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserLogin" EntityType="TradingModel.Store.UserLogin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DummyView" EntityType="TradingModel.Store.DummyView" store:Type="Views" store:Schema="dbo" store:Name="DummyView">
+      <DefiningQuery>SELECT 
+      [DummyView].[BUYER_ID] AS [BUYER_ID], 
+      [DummyView].[BUYER_NAME] AS [BUYER_NAME], 
+      [DummyView].[BUYER_CONTACT] AS [BUYER_CONTACT], 
+      [DummyView].[BUYER_EMAIL] AS [BUYER_EMAIL]
+      FROM [dbo].[DummyView] AS [DummyView]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Account_Transaction_BANK" Association="TradingModel.Store.FK_Account_Transaction_BANK">
+      <End Role="BANK" EntitySet="BANK" />
+      <End Role="Account_Transaction" EntitySet="Account_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Transaction_Invoices" Association="TradingModel.Store.FK_Account_Transaction_Invoices">
+      <End Role="Invoices" EntitySet="Invoices" />
+      <End Role="Account_Transaction" EntitySet="Account_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exchange_Currency" Association="TradingModel.Store.FK_Exchange_Currency">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Exchange" EntitySet="Exchange" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exchange_Currency1" Association="TradingModel.Store.FK_Exchange_Currency1">
+      <End Role="Currency" EntitySet="Currency" />
+      <End Role="Exchange" EntitySet="Exchange" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_PRODUCT" Association="TradingModel.Store.FK_Inventory_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCT" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_SHIP_PRD" Association="TradingModel.Store.FK_Inventory_SHIP_PRD">
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_SHIP_SUPP" Association="TradingModel.Store.FK_Invoices_SHIP_SUPP">
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDER_BUYER" Association="TradingModel.Store.FK_ORDER_BUYER">
+      <End Role="BUYER" EntitySet="BUYER" />
+      <End Role="ORDER" EntitySet="ORDER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_prod_ORDER" Association="TradingModel.Store.FK_Order_prod_ORDER">
+      <End Role="ORDER" EntitySet="ORDER" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_prod_Payments" Association="TradingModel.Store.FK_Order_prod_Payments">
+      <End Role="Payments" EntitySet="Payments" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_prod_PRODUCT" Association="TradingModel.Store.FK_Order_prod_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCT" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_PRD_PRODUCT" Association="TradingModel.Store.FK_SHIP_PRD_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCT" />
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_PRD_SHIP_SUPP" Association="TradingModel.Store.FK_SHIP_PRD_SHIP_SUPP">
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_Frieght" Association="TradingModel.Store.FK_SHIP_SUPP_Frieght">
+      <End Role="Frieght" EntitySet="Frieght" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_ORDER" Association="TradingModel.Store.FK_SHIP_SUPP_ORDER">
+      <End Role="ORDER" EntitySet="ORDER" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_Payments" Association="TradingModel.Store.FK_SHIP_SUPP_Payments">
+      <End Role="Payments" EntitySet="Payments" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_SUPPLIER" Association="TradingModel.Store.FK_SHIP_SUPP_SUPPLIER">
+      <End Role="SUPPLIER" EntitySet="SUPPLIER" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account_Transaction">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Acc_id" Type="int" />
+    <Property Name="ref" Type="nvarchar(max)" />
+    <Property Name="ref_no" Type="int" />
+    <Property Name="total" Type="float" />
+    <Property Name="acc_total" Type="float" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+    <Property Name="PAYMENT" Type="nvarchar(max)" />
+    <Property Name="payment_no" Type="nvarchar(max)" />
+    <Property Name="debit" Type="float" />
+    <Property Name="credit" Type="float" />
+  </EntityType>
+  <EntityType Name="BANK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ACC_NO" Type="nvarchar(max)" />
+    <Property Name="ACC_NAME" Type="nvarchar(max)" />
+    <Property Name="ACC_TYPE" Type="nvarchar(max)" />
+    <Property Name="ACC_BALANCE" Type="float" />
+    <Property Name="BRANCH" Type="nvarchar(max)" />
+    <Property Name="ADDRESS" Type="nvarchar(max)" />
+    <Property Name="BRANCH_CODE" Type="nvarchar(max)" />
+    <Property Name="BANK_NO" Type="nvarchar(max)" />
+    <Property Name="BANK_EMAIL" Type="nvarchar(max)" />
+    <Property Name="E_DATE" Type="date" />
+    <Property Name="M_DATE" Type="date" />
+    <Property Name="Currency" Type="nvarchar(max)" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="BUYER">
+    <Key>
+      <PropertyRef Name="BUYER_ID" />
+    </Key>
+    <Property Name="BUYER_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BUYER_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUYER_CONTACT" Type="nchar" MaxLength="10" />
+    <Property Name="BUYER_EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUYER_ACCOUNT" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUYER_COMPANY" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUYER_REMARKS" Type="nvarchar" MaxLength="50" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Exchange">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CId_To" Type="int" />
+    <Property Name="CId_From" Type="int" />
+    <Property Name="Ex_Rate" Type="float" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Frieght">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="company" Type="nvarchar(max)" />
+    <Property Name="ref" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="prd_id" Type="int" />
+    <Property Name="ship_prd_id" Type="int" />
+    <Property Name="currency" Type="nvarchar" MaxLength="50" />
+    <Property Name="prd_quantity" Type="int" />
+    <Property Name="prd_cost" Type="float" />
+    <Property Name="ship_date" Type="date" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+  </EntityType>
+  <EntityType Name="Invoices">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SH_id" Type="int" />
+    <Property Name="in_type" Type="nvarchar(max)" />
+    <Property Name="ref" Type="nvarchar(max)" />
+    <Property Name="in_total" Type="float" />
+    <Property Name="active" Type="bit" />
+    <Property Name="in_currency" Type="nvarchar" MaxLength="50" />
+    <Property Name="currency_total" Type="float" />
+    <Property Name="ex_rate" Type="float" />
+    <Property Name="in_paid" Type="float" />
+    <Property Name="pck" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ORDER">
+    <Key>
+      <PropertyRef Name="ORDER_ID" />
+    </Key>
+    <Property Name="ORDER_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BUYER_ID" Type="int" />
+    <Property Name="order_name" Type="nvarchar(max)" />
+    <Property Name="order_total" Type="float" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="required_date" Type="date" />
+    <Property Name="shipped_date" Type="date" />
+    <Property Name="ref" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+    <Property Name="invoice" Type="bit" />
+  </EntityType>
+  <EntityType Name="Order_prod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ord_id" Type="int" />
+    <Property Name="prd_id" Type="int" />
+    <Property Name="prd_sp" Type="float" />
+    <Property Name="prd_unit" Type="int" />
+    <Property Name="currency" Type="nvarchar" MaxLength="50" />
+    <Property Name="payment_id" Type="int" />
+    <Property Name="payment_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="PRODUCT">
+    <Key>
+      <PropertyRef Name="PRD_ID" />
+    </Key>
+    <Property Name="PRD_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PRD_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRD_CP" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRD_SP" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRD_DESC" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRD_CATEGORY" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="SHIP_PRD">
+    <Key>
+      <PropertyRef Name="SHIP_PRD_ID" />
+    </Key>
+    <Property Name="SHIP_PRD_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_id" Type="int" />
+    <Property Name="PRD_ID" Type="int" />
+    <Property Name="Currency" Type="nvarchar" MaxLength="50" />
+    <Property Name="units" Type="int" />
+    <Property Name="PRD_CP" Type="float" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+    <Property Name="PRD_REMARKS" Type="nvarchar" MaxLength="50" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="SHIP_SUPP">
+    <Key>
+      <PropertyRef Name="SHIP_SUPP_ID" />
+    </Key>
+    <Property Name="SHIP_SUPP_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUPP_ID" Type="int" />
+    <Property Name="frieght_id" Type="int" />
+    <Property Name="ship_payment" Type="bit" />
+    <Property Name="SUPP_REMARKS" Type="nvarchar" MaxLength="50" />
+    <Property Name="payment_type" Type="nvarchar(max)" />
+    <Property Name="py_type_id" Type="int" />
+    <Property Name="sh_total" Type="float" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+    <Property Name="order_id" Type="int" />
+    <Property Name="service_charges" Type="float" />
+    <Property Name="shipment_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="currency" Type="nvarchar(max)" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="SUPPLIER">
+    <Key>
+      <PropertyRef Name="SUPP_ID" />
+    </Key>
+    <Property Name="SUPP_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUPP_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUPP_CONTACT" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUPP_EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUPP_COMPANY" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUPP_REMARKS" Type="nvarchar" MaxLength="50" />
+    <Property Name="E_DATE" Type="date" />
+    <Property Name="M_DATE" Type="date" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="userid" Type="nvarchar(max)" />
+    <Property Name="password" Type="nvarchar(max)" />
+    <Property Name="e_date" Type="date" />
+    <Property Name="m_date" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'E:\PROJECTS\TRADINGSOLUTIONS\TRADINGBLL\TRADING.MDF.dbo.DummyView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DummyView">
+    <Key>
+      <PropertyRef Name="BUYER_ID" />
+    </Key>
+    <Property Name="BUYER_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BUYER_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUYER_CONTACT" Type="nchar" MaxLength="10" />
+    <Property Name="BUYER_EMAIL" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Account_Transaction_BANK">
+    <End Role="BANK" Type="TradingModel.Store.BANK" Multiplicity="0..1" />
+    <End Role="Account_Transaction" Type="TradingModel.Store.Account_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BANK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Account_Transaction">
+        <PropertyRef Name="Acc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Transaction_Invoices">
+    <End Role="Invoices" Type="TradingModel.Store.Invoices" Multiplicity="0..1" />
+    <End Role="Account_Transaction" Type="TradingModel.Store.Account_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoices">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Account_Transaction">
+        <PropertyRef Name="ref_no" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exchange_Currency">
+    <End Role="Currency" Type="TradingModel.Store.Currency" Multiplicity="0..1" />
+    <End Role="Exchange" Type="TradingModel.Store.Exchange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Exchange">
+        <PropertyRef Name="CId_To" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exchange_Currency1">
+    <End Role="Currency" Type="TradingModel.Store.Currency" Multiplicity="0..1" />
+    <End Role="Exchange" Type="TradingModel.Store.Exchange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Exchange">
+        <PropertyRef Name="CId_From" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_PRODUCT">
+    <End Role="PRODUCT" Type="TradingModel.Store.PRODUCT" Multiplicity="0..1" />
+    <End Role="Inventory" Type="TradingModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_SHIP_PRD">
+    <End Role="SHIP_PRD" Type="TradingModel.Store.SHIP_PRD" Multiplicity="0..1" />
+    <End Role="Inventory" Type="TradingModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_PRD">
+        <PropertyRef Name="SHIP_PRD_ID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="ship_prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_SHIP_SUPP">
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="0..1" />
+    <End Role="Invoices" Type="TradingModel.Store.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_SUPP">
+        <PropertyRef Name="SHIP_SUPP_ID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="SH_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDER_BUYER">
+    <End Role="BUYER" Type="TradingModel.Store.BUYER" Multiplicity="0..1" />
+    <End Role="ORDER" Type="TradingModel.Store.ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BUYER">
+        <PropertyRef Name="BUYER_ID" />
+      </Principal>
+      <Dependent Role="ORDER">
+        <PropertyRef Name="BUYER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_prod_ORDER">
+    <End Role="ORDER" Type="TradingModel.Store.ORDER" Multiplicity="0..1" />
+    <End Role="Order_prod" Type="TradingModel.Store.Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDER">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="ord_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_prod_Payments">
+    <End Role="Payments" Type="TradingModel.Store.Payments" Multiplicity="0..1" />
+    <End Role="Order_prod" Type="TradingModel.Store.Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payments">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="payment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_prod_PRODUCT">
+    <End Role="PRODUCT" Type="TradingModel.Store.PRODUCT" Multiplicity="0..1" />
+    <End Role="Order_prod" Type="TradingModel.Store.Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_PRD_PRODUCT">
+    <End Role="PRODUCT" Type="TradingModel.Store.PRODUCT" Multiplicity="0..1" />
+    <End Role="SHIP_PRD" Type="TradingModel.Store.SHIP_PRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="SHIP_PRD">
+        <PropertyRef Name="PRD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_PRD_SHIP_SUPP">
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="0..1" />
+    <End Role="SHIP_PRD" Type="TradingModel.Store.SHIP_PRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_SUPP">
+        <PropertyRef Name="SHIP_SUPP_ID" />
+      </Principal>
+      <Dependent Role="SHIP_PRD">
+        <PropertyRef Name="Ship_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_Frieght">
+    <End Role="Frieght" Type="TradingModel.Store.Frieght" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Frieght">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="frieght_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_ORDER">
+    <End Role="ORDER" Type="TradingModel.Store.ORDER" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDER">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_Payments">
+    <End Role="Payments" Type="TradingModel.Store.Payments" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payments">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="py_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_SUPPLIER">
+    <End Role="SUPPLIER" Type="TradingModel.Store.SUPPLIER" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.Store.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUPPLIER">
+        <PropertyRef Name="SUPP_ID" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="SUPP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AccountID" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="AccountTransaction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCID" Type="int" Mode="In" />
+    <Parameter Name="TYPEOFTRANSACTION" Type="nvarchar" Mode="In" />
+    <Parameter Name="REFRENCE" Type="nvarchar" Mode="In" />
+    <Parameter Name="TOTAL" Type="float" Mode="In" />
+    <Parameter Name="E_DATE" Type="date" Mode="In" />
+    <Parameter Name="PAYMENT" Type="float" Mode="In" />
+  </Function>
+  <Function Name="CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userid" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="CheckNameOfChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="CheckProductInInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="prd_name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteBank" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteBuyers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteCurrency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="currencyName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteFrieght" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderName" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyername" Type="nvarchar" Mode="In" />
+    <Parameter Name="orderTotal" Type="float" Mode="In" />
+    <Parameter Name="order_date" Type="date" Mode="In" />
+    <Parameter Name="required_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="DeletePayments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Dummy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetAccountId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GetShipmentIdForInvoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ship_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="freight_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="sh_total" Type="float" Mode="In" />
+    <Parameter Name="service_charges" Type="float" Mode="In" />
+    <Parameter Name="shipment_type" Type="nvarchar" Mode="In" />
+    <Parameter Name="currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="payment_type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="InsertBank" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="acc_no" Type="nvarchar" Mode="In" />
+    <Parameter Name="acc_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="acc_type" Type="nvarchar" Mode="In" />
+    <Parameter Name="acc_balance" Type="float" Mode="In" />
+    <Parameter Name="acc_branch" Type="nvarchar" Mode="In" />
+    <Parameter Name="address" Type="nvarchar" Mode="In" />
+    <Parameter Name="branch_code" Type="nvarchar" Mode="In" />
+    <Parameter Name="bank_no" Type="nvarchar" Mode="In" />
+    <Parameter Name="CURRENCY" Type="nvarchar" Mode="In" />
+    <Parameter Name="bank_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertBuyer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="buyer_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_contact" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_account" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_company" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="num" Type="nvarchar" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertCurrency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertExchangeRate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Currency1" Type="nvarchar" Mode="In" />
+    <Parameter Name="Currency2" Type="nvarchar" Mode="In" />
+    <Parameter Name="exRate" Type="float" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertFiscalYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="from_n" Type="date" Mode="In" />
+    <Parameter Name="to_n" Type="date" Mode="In" />
+    <Parameter Name="to" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertFreight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="company" Type="nvarchar" Mode="In" />
+    <Parameter Name="ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertJournalAndPosting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ACCiD" Type="int" Mode="In" />
+    <Parameter Name="acc_num" Type="nvarchar" Mode="In" />
+    <Parameter Name="Amount" Type="float" Mode="In" />
+    <Parameter Name="Des" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="eDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertOrder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="buyername" Type="nvarchar" Mode="In" />
+    <Parameter Name="order_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="order_date" Type="date" Mode="In" />
+    <Parameter Name="order_total" Type="float" Mode="In" />
+    <Parameter Name="required_date" Type="date" Mode="In" />
+    <Parameter Name="shipped_date" Type="date" Mode="In" />
+    <Parameter Name="ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertOrderInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShipId" Type="int" Mode="In" />
+    <Parameter Name="PrdName" Type="nvarchar" Mode="In" />
+    <Parameter Name="currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="unitsInventory" Type="int" Mode="In" />
+    <Parameter Name="Units" Type="int" Mode="In" />
+    <Parameter Name="prd_cp" Type="float" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+    <Parameter Name="PrdInventory_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="InsertOrderProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderId" Type="int" Mode="In" />
+    <Parameter Name="ProductName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Prd_sp" Type="float" Mode="In" />
+    <Parameter Name="prd_quan" Type="int" Mode="In" />
+    <Parameter Name="currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="total" Type="float" Mode="In" />
+  </Function>
+  <Function Name="InsertPackingList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="invoiceId" Type="int" Mode="In" />
+    <Parameter Name="PackLisg" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="InsertPayments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="type" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="cp" Type="nvarchar" Mode="In" />
+    <Parameter Name="sp" Type="nvarchar" Mode="In" />
+    <Parameter Name="desc" Type="nvarchar" Mode="In" />
+    <Parameter Name="category" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertShipmentOrderWithInvoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ship_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="payment_type" Type="nvarchar" Mode="In" />
+    <Parameter Name="sh_total" Type="float" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+    <Parameter Name="order_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="service_charges" Type="float" Mode="In" />
+    <Parameter Name="currency_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="invoice_ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="order_id" Type="int" Mode="In" />
+    <Parameter Name="currency_invoice" Type="nvarchar" Mode="In" />
+    <Parameter Name="invoice_total" Type="float" Mode="In" />
+    <Parameter Name="ex_rate" Type="float" Mode="In" />
+  </Function>
+  <Function Name="InsertShipmentProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="shipment_id" Type="int" Mode="In" />
+    <Parameter Name="product_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="prd_cp" Type="float" Mode="In" />
+    <Parameter Name="units" Type="int" Mode="In" />
+    <Parameter Name="currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="prd_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InsertShipmentSupplierWithInvoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ship_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="freight_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="sh_total" Type="float" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+    <Parameter Name="service_charges" Type="float" Mode="In" />
+    <Parameter Name="shipment_type" Type="nvarchar" Mode="In" />
+    <Parameter Name="currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="payment_type" Type="nvarchar" Mode="In" />
+    <Parameter Name="invoice_ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="invoice_currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="currency_total" Type="float" Mode="In" />
+    <Parameter Name="ex_rate" Type="float" Mode="In" />
+  </Function>
+  <Function Name="InsertSuppliers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="supp_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_contact" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_company" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="InventoryGrid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FROM" Type="date" Mode="In" />
+    <Parameter Name="TO" Type="date" Mode="In" />
+  </Function>
+  <Function Name="PaymentOfShipmentORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="invoice_id" Type="int" Mode="In" />
+    <Parameter Name="payment" Type="float" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="payment_type" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="payment_no" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="PaymentOfShipmentSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="invoice_id" Type="int" Mode="In" />
+    <Parameter Name="payment" Type="float" Mode="In" />
+    <Parameter Name="account_id" Type="int" Mode="In" />
+    <Parameter Name="payment_type" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="payment_no" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="REFUNDINVOICE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="invoiceId" Type="int" Mode="In" />
+    <Parameter Name="newAmount" Type="float" Mode="In" />
+    <Parameter Name="accID" Type="int" Mode="In" />
+    <Parameter Name="newBalance" Type="float" Mode="In" />
+    <Parameter Name="checktran" Type="nvarchar" Mode="In" />
+    <Parameter Name="exrate" Type="float" Mode="In" />
+    <Parameter Name="PAID" Type="float" Mode="In" />
+  </Function>
+  <Function Name="ReportCurrentInventory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowBuyerName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowBuyerNameWithShipmentNameWithOrderName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowBuyerNameWithShipmentNameWithOrderNameForInvoice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowBuyers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowCurrency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowCurrencyNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowExchangeRates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowFiscalYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowFreight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowFreightName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowInvoicesBuyer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowInvoicesSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowInvoiceSupplierDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="invoiceId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowLedgers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowOrderDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="orderId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowOrderDetailsForPayments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowOrderID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="buyerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="orderName" Type="nvarchar" Mode="In" />
+    <Parameter Name="orderTotal" Type="float" Mode="In" />
+    <Parameter Name="orderRef" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ShowOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowOrdersForPayments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvoiceId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowPackingList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowPayments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowPaymentTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowProductCP_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="product_name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ShowProductNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowProducts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowProductsOfPackingList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pck" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ShowShipmentIDForOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="shipmentName" Type="nvarchar" Mode="In" />
+    <Parameter Name="orderId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShowSupplierNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowSupplierNameWithShipmentName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ShowSuppliers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UpdateBuyer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="buyer_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_contact" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_account" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_company" Type="nvarchar" Mode="In" />
+    <Parameter Name="buyer_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateFiscalYearOnlogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="to" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateFrieght" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="company" Type="nvarchar" Mode="In" />
+    <Parameter Name="ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="cp" Type="nvarchar" Mode="In" />
+    <Parameter Name="sp" Type="nvarchar" Mode="In" />
+    <Parameter Name="desc" Type="nvarchar" Mode="In" />
+    <Parameter Name="category" Type="nvarchar" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="orderId" Type="int" Mode="In" />
+    <Parameter Name="buyername" Type="nvarchar" Mode="In" />
+    <Parameter Name="order_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="order_date" Type="date" Mode="In" />
+    <Parameter Name="order_total" Type="float" Mode="In" />
+    <Parameter Name="required_date" Type="date" Mode="In" />
+    <Parameter Name="shipped_date" Type="date" Mode="In" />
+    <Parameter Name="ref" Type="nvarchar" Mode="In" />
+    <Parameter Name="e_date" Type="date" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateSuppliers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="supp_name" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_contact" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_email" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_company" Type="nvarchar" Mode="In" />
+    <Parameter Name="supp_remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="m_date" Type="date" Mode="In" />
+  </Function>
+</Schema>

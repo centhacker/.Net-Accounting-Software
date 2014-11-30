@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TradingModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TradingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Account_Transaction" EntityType="TradingModel.Account_Transaction" />
+    <EntitySet Name="BANKs" EntityType="TradingModel.BANK" />
+    <EntitySet Name="BUYERs" EntityType="TradingModel.BUYER" />
+    <EntitySet Name="Currencies" EntityType="TradingModel.Currency" />
+    <EntitySet Name="Exchanges" EntityType="TradingModel.Exchange" />
+    <EntitySet Name="Frieghts" EntityType="TradingModel.Frieght" />
+    <EntitySet Name="Inventories" EntityType="TradingModel.Inventory" />
+    <EntitySet Name="Invoices" EntityType="TradingModel.Invoice" />
+    <EntitySet Name="ORDERs" EntityType="TradingModel.ORDER" />
+    <EntitySet Name="Payments" EntityType="TradingModel.Payment" />
+    <EntitySet Name="PRODUCTs" EntityType="TradingModel.PRODUCT" />
+    <EntitySet Name="SHIP_PRD" EntityType="TradingModel.SHIP_PRD" />
+    <EntitySet Name="SHIP_SUPP" EntityType="TradingModel.SHIP_SUPP" />
+    <EntitySet Name="SUPPLIERs" EntityType="TradingModel.SUPPLIER" />
+    <EntitySet Name="sysdiagrams" EntityType="TradingModel.sysdiagram" />
+    <AssociationSet Name="FK_Account_Transaction_BANK" Association="TradingModel.FK_Account_Transaction_BANK">
+      <End Role="BANK" EntitySet="BANKs" />
+      <End Role="Account_Transaction" EntitySet="Account_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Transaction_Invoices" Association="TradingModel.FK_Account_Transaction_Invoices">
+      <End Role="Invoices" EntitySet="Invoices" />
+      <End Role="Account_Transaction" EntitySet="Account_Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDER_BUYER" Association="TradingModel.FK_ORDER_BUYER">
+      <End Role="BUYER" EntitySet="BUYERs" />
+      <End Role="ORDER" EntitySet="ORDERs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exchange_Currency" Association="TradingModel.FK_Exchange_Currency">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Exchange" EntitySet="Exchanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Exchange_Currency1" Association="TradingModel.FK_Exchange_Currency1">
+      <End Role="Currency" EntitySet="Currencies" />
+      <End Role="Exchange" EntitySet="Exchanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_Frieght" Association="TradingModel.FK_SHIP_SUPP_Frieght">
+      <End Role="Frieght" EntitySet="Frieghts" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_PRODUCT" Association="TradingModel.FK_Inventory_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCTs" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoices_SHIP_SUPP" Association="TradingModel.FK_Invoices_SHIP_SUPP">
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+      <End Role="Invoices" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_Payments" Association="TradingModel.FK_SHIP_SUPP_Payments">
+      <End Role="Payments" EntitySet="Payments" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_PRD_PRODUCT" Association="TradingModel.FK_SHIP_PRD_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCTs" />
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_SUPP_SUPPLIER" Association="TradingModel.FK_SHIP_SUPP_SUPPLIER">
+      <End Role="SUPPLIER" EntitySet="SUPPLIERs" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <FunctionImport Name="ShowProducts" ReturnType="Collection(TradingModel.ComplexProducts)" />
+    <FunctionImport Name="InsertProduct">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="cp" Mode="In" Type="String" />
+      <Parameter Name="sp" Mode="In" Type="String" />
+      <Parameter Name="desc" Mode="In" Type="String" />
+      <Parameter Name="category" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateProduct">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="cp" Mode="In" Type="String" />
+      <Parameter Name="sp" Mode="In" Type="String" />
+      <Parameter Name="desc" Mode="In" Type="String" />
+      <Parameter Name="category" Mode="In" Type="String" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteProduct">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowBuyer" ReturnType="Collection(TradingModel.ComplexBuyer)" />
+    <FunctionImport Name="InsertBuyer">
+      <Parameter Name="buyer_name" Mode="In" Type="String" />
+      <Parameter Name="buyer_contact" Mode="In" Type="String" />
+      <Parameter Name="buyer_email" Mode="In" Type="String" />
+      <Parameter Name="buyer_account" Mode="In" Type="String" />
+      <Parameter Name="buyer_company" Mode="In" Type="String" />
+      <Parameter Name="buyer_remarks" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateBuyer">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="buyer_name" Mode="In" Type="String" />
+      <Parameter Name="buyer_contact" Mode="In" Type="String" />
+      <Parameter Name="buyer_email" Mode="In" Type="String" />
+      <Parameter Name="buyer_account" Mode="In" Type="String" />
+      <Parameter Name="buyer_company" Mode="In" Type="String" />
+      <Parameter Name="buyer_remarks" Mode="In" Type="String" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteBuyer">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowFreight" ReturnType="Collection(TradingModel.ComplexFreight)" />
+    <FunctionImport Name="InsertFreight">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="company" Mode="In" Type="String" />
+      <Parameter Name="ref" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateFreight">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="company" Mode="In" Type="String" />
+      <Parameter Name="ref" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteFreight">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowSupplier" ReturnType="Collection(TradingModel.ComplexSupplier)" />
+    <FunctionImport Name="InsertSupplier">
+      <Parameter Name="supp_name" Mode="In" Type="String" />
+      <Parameter Name="supp_contact" Mode="In" Type="String" />
+      <Parameter Name="supp_email" Mode="In" Type="String" />
+      <Parameter Name="supp_company" Mode="In" Type="String" />
+      <Parameter Name="supp_remarks" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateSupplier">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="supp_name" Mode="In" Type="String" />
+      <Parameter Name="supp_contact" Mode="In" Type="String" />
+      <Parameter Name="supp_email" Mode="In" Type="String" />
+      <Parameter Name="supp_company" Mode="In" Type="String" />
+      <Parameter Name="supp_remarks" Mode="In" Type="String" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteSupplier">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="UserLogins" EntityType="TradingModel.UserLogin" />
+    <FunctionImport Name="CheckLogin" ReturnType="Collection(TradingModel.ScalarLogin)">
+      <Parameter Name="userid" Mode="In" Type="String" />
+    </FunctionImport>
+    <AssociationSet Name="FK_SHIP_SUPP_ORDER" Association="TradingModel.FK_SHIP_SUPP_ORDER">
+      <End Role="ORDER" EntitySet="ORDERs" />
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIP_PRD_SHIP_SUPP" Association="TradingModel.FK_SHIP_PRD_SHIP_SUPP">
+      <End Role="SHIP_SUPP" EntitySet="SHIP_SUPP" />
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+    </AssociationSet>
+    <FunctionImport Name="InsertOrder">
+      <Parameter Name="buyername" Mode="In" Type="String" />
+      <Parameter Name="order_name" Mode="In" Type="String" />
+      <Parameter Name="order_date" Mode="In" Type="DateTime" />
+      <Parameter Name="order_total" Mode="In" Type="Double" />
+      <Parameter Name="required_date" Mode="In" Type="DateTime" />
+      <Parameter Name="shipped_date" Mode="In" Type="DateTime" />
+      <Parameter Name="ref" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteOrder">
+      <Parameter Name="OrderName" Mode="In" Type="String" />
+      <Parameter Name="buyername" Mode="In" Type="String" />
+      <Parameter Name="orderTotal" Mode="In" Type="Double" />
+      <Parameter Name="order_date" Mode="In" Type="DateTime" />
+      <Parameter Name="required_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowOrder" ReturnType="Collection(TradingModel.ComplexOrders)" />
+    <FunctionImport Name="ShowBuyerNames" ReturnType="Collection(TradingModel.ScalarBuyerNames)" />
+    <FunctionImport Name="InsertCurrency">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="InsertExchangeRate">
+      <Parameter Name="Currency1" Mode="In" Type="String" />
+      <Parameter Name="Currency2" Mode="In" Type="String" />
+      <Parameter Name="exRate" Mode="In" Type="Double" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowCurrency" ReturnType="Collection(TradingModel.ComplexCurrency)" />
+    <FunctionImport Name="ShowExchangeRates" ReturnType="Collection(TradingModel.ComplexExRate)" />
+    <FunctionImport Name="DeleteCurrency">
+      <Parameter Name="currencyName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertPayments">
+      <Parameter Name="type" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowPayments" ReturnType="Collection(TradingModel.ComplexPayments)" />
+    <FunctionImport Name="DeletePayments">
+      <Parameter Name="type" Mode="In" Type="String" />
+    </FunctionImport>
+    <AssociationSet Name="FK_Inventory_SHIP_PRD" Association="TradingModel.FK_Inventory_SHIP_PRD">
+      <End Role="SHIP_PRD" EntitySet="SHIP_PRD" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <FunctionImport Name="ShowFreightNames" ReturnType="Collection(TradingModel.ScalarFreightName)" />
+    <FunctionImport Name="ShowCurrencyNames" ReturnType="Collection(TradingModel.ScalarCurrencyNames)" />
+    <FunctionImport Name="ShowProductNames" ReturnType="Collection(TradingModel.ScalarProductNames)" />
+    <FunctionImport Name="ShowSupplierNames" ReturnType="Collection(TradingModel.ScalarSupplierNames)" />
+    <FunctionImport Name="ShowPaymentNames" ReturnType="Collection(TradingModel.ScalarPaymentNames)" />
+    <FunctionImport Name="ShowProduct_SPCP" ReturnType="Collection(TradingModel.ScalarProductCPSP)">
+      <Parameter Name="product_name" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Dummy" />
+    <FunctionImport Name="InsertShipmentSupplierWithInvoice">
+      <Parameter Name="ship_name" Mode="In" Type="String" />
+      <Parameter Name="supp_name" Mode="In" Type="String" />
+      <Parameter Name="freight_name" Mode="In" Type="String" />
+      <Parameter Name="sh_total" Mode="In" Type="Double" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+      <Parameter Name="service_charges" Mode="In" Type="Double" />
+      <Parameter Name="shipment_type" Mode="In" Type="String" />
+      <Parameter Name="currency" Mode="In" Type="String" />
+      <Parameter Name="supp_remarks" Mode="In" Type="String" />
+      <Parameter Name="payment_type" Mode="In" Type="String" />
+      <Parameter Name="invoice_ref" Mode="In" Type="String" />
+      <Parameter Name="invoice_currency" Mode="In" Type="String" />
+      <Parameter Name="currency_total" Mode="In" Type="Double" />
+      <Parameter Name="ex_rate" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="InsertShipmentProduct">
+      <Parameter Name="shipment_id" Mode="In" Type="Int32" />
+      <Parameter Name="product_name" Mode="In" Type="String" />
+      <Parameter Name="prd_cp" Mode="In" Type="Double" />
+      <Parameter Name="units" Mode="In" Type="Int32" />
+      <Parameter Name="currency" Mode="In" Type="String" />
+      <Parameter Name="prd_remarks" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetShipmentIdForInvoice" ReturnType="Collection(TradingModel.ScalarShipmentId)">
+      <Parameter Name="ship_name" Mode="In" Type="String" />
+      <Parameter Name="supp_name" Mode="In" Type="String" />
+      <Parameter Name="freight_name" Mode="In" Type="String" />
+      <Parameter Name="sh_total" Mode="In" Type="Double" />
+      <Parameter Name="service_charges" Mode="In" Type="Double" />
+      <Parameter Name="shipment_type" Mode="In" Type="String" />
+      <Parameter Name="currency" Mode="In" Type="String" />
+      <Parameter Name="supp_remarks" Mode="In" Type="String" />
+      <Parameter Name="payment_type" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ShowSupplierNameWithShipmentName" ReturnType="Collection(TradingModel.ScalarSupplierNameWithShipmentName)" />
+    <EntitySet Name="Order_prod" EntityType="TradingModel.Order_prod" />
+    <AssociationSet Name="FK_Order_prod_ORDER" Association="TradingModel.FK_Order_prod_ORDER">
+      <End Role="ORDER" EntitySet="ORDERs" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_prod_Payments" Association="TradingModel.FK_Order_prod_Payments">
+      <End Role="Payment" EntitySet="Payments" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_prod_PRODUCT" Association="TradingModel.FK_Order_prod_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCTs" />
+      <End Role="Order_prod" EntitySet="Order_prod" />
+    </AssociationSet>
+    <FunctionImport Name="InsertOrderProducts">
+      <Parameter Name="OrderId" Mode="In" Type="Int32" />
+      <Parameter Name="ProductName" Mode="In" Type="String" />
+      <Parameter Name="Prd_sp" Mode="In" Type="Double" />
+      <Parameter Name="prd_quan" Mode="In" Type="Int32" />
+      <Parameter Name="currency" Mode="In" Type="String" />
+      <Parameter Name="total" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="ShowOrderDetails" ReturnType="Collection(TradingModel.ComplexOrderDetails)">
+      <Parameter Name="orderId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowOrderID" ReturnType="Collection(TradingModel.ScalarOrderID)">
+      <Parameter Name="buyerName" Mode="In" Type="String" />
+      <Parameter Name="orderName" Mode="In" Type="String" />
+      <Parameter Name="orderTotal" Mode="In" Type="Double" />
+      <Parameter Name="orderRef" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="DummyViews" EntityType="TradingModel.DummyView" />
+    <FunctionImport Name="UpdateOrder">
+      <Parameter Name="orderId" Mode="In" Type="Int32" />
+      <Parameter Name="buyername" Mode="In" Type="String" />
+      <Parameter Name="order_name" Mode="In" Type="String" />
+      <Parameter Name="order_date" Mode="In" Type="DateTime" />
+      <Parameter Name="order_total" Mode="In" Type="Double" />
+      <Parameter Name="required_date" Mode="In" Type="DateTime" />
+      <Parameter Name="shipped_date" Mode="In" Type="DateTime" />
+      <Parameter Name="ref" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowBuyerNameWithOrderName" ReturnType="Collection(TradingModel.ScalarBuyerNameWithOrderName)" />
+    <FunctionImport Name="CheckProductInInventory" ReturnType="Collection(TradingModel.ScalarProductQuantity)">
+      <Parameter Name="prd_name" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertShipmentOrderWithInvoice">
+      <Parameter Name="ship_name" Mode="In" Type="String" />
+      <Parameter Name="supp_remarks" Mode="In" Type="String" />
+      <Parameter Name="buyer_name" Mode="In" Type="String" />
+      <Parameter Name="payment_type" Mode="In" Type="String" />
+      <Parameter Name="sh_total" Mode="In" Type="Double" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+      <Parameter Name="order_name" Mode="In" Type="String" />
+      <Parameter Name="service_charges" Mode="In" Type="Double" />
+      <Parameter Name="currency_name" Mode="In" Type="String" />
+      <Parameter Name="invoice_ref" Mode="In" Type="String" />
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+      <Parameter Name="currency_invoice" Mode="In" Type="String" />
+      <Parameter Name="invoice_total" Mode="In" Type="Double" />
+      <Parameter Name="ex_rate" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="InsertOrderInventory">
+      <Parameter Name="ShipId" Mode="In" Type="Int32" />
+      <Parameter Name="PrdName" Mode="In" Type="String" />
+      <Parameter Name="currency" Mode="In" Type="String" />
+      <Parameter Name="unitsInventory" Mode="In" Type="Int32" />
+      <Parameter Name="Units" Mode="In" Type="Int32" />
+      <Parameter Name="prd_cp" Mode="In" Type="Double" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+      <Parameter Name="PrdInventory_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowShipmentIDForOrders" ReturnType="Collection(TradingModel.ScalarShipmentOrderID)">
+      <Parameter Name="shipmentName" Mode="In" Type="String" />
+      <Parameter Name="orderId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowBuyerNameWithOrderNameWithShipmentNameForInvoice" ReturnType="Collection(TradingModel.scalarBuyerNameOrderNameInvoice)" />
+    <FunctionImport Name="ShowLedgers" ReturnType="Collection(TradingModel.ScalarAccountType)" />
+    <FunctionImport Name="CheckNameOfAccounts" ReturnType="Collection(TradingModel.ScalarAccountName)">
+      <Parameter Name="name" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertCharOfAccount">
+      <Parameter Name="num" Mode="In" Type="String" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="type" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteChartOfAccounts">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowChartOfAccounts" ReturnType="Collection(TradingModel.ComplexChartOfAccounts)" />
+    <FunctionImport Name="GetAccountID" ReturnType="Collection(TradingModel.ScalarAccountID)">
+      <Parameter Name="type" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertBank">
+      <Parameter Name="acc_no" Mode="In" Type="String" />
+      <Parameter Name="acc_name" Mode="In" Type="String" />
+      <Parameter Name="acc_type" Mode="In" Type="String" />
+      <Parameter Name="acc_balance" Mode="In" Type="Double" />
+      <Parameter Name="acc_branch" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="branch_code" Mode="In" Type="String" />
+      <Parameter Name="bank_no" Mode="In" Type="String" />
+      <Parameter Name="CURRENCY" Mode="In" Type="String" />
+      <Parameter Name="bank_email" Mode="In" Type="String" />
+      <Parameter Name="e_date" Mode="In" Type="DateTime" />
+      <Parameter Name="m_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowBank" ReturnType="Collection(TradingModel.complexbank)" />
+    <FunctionImport Name="DeleteBank">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PaymentOfShipmentOrder">
+      <Parameter Name="invoice_id" Mode="In" Type="Int32" />
+      <Parameter Name="payment" Mode="In" Type="Double" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="payment_type" Mode="In" Type="String" />
+      <Parameter Name="payment_no" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PaymentOfShipmentSupplier">
+      <Parameter Name="invoice_id" Mode="In" Type="Int32" />
+      <Parameter Name="payment" Mode="In" Type="Double" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="payment_type" Mode="In" Type="String" />
+      <Parameter Name="payment_no" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ShowInvoicesBuyer" ReturnType="Collection(TradingModel.ComplexInvoicesBuyer)" />
+    <FunctionImport Name="ShowOrderPayments" ReturnType="Collection(TradingModel.ComplexOrderPayments)">
+      <Parameter Name="InvoiceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowOrderDetailsPayments" ReturnType="Collection(TradingModel.ComplexOrderDetailPayments)">
+      <Parameter Name="OrderId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ShowInvoicesSupplier" ReturnType="Collection(TradingModel.ComplexInvoicesSupplier)" />
+    <FunctionImport Name="ShowInvoiceSupplierDetails" ReturnType="Collection(TradingModel.ComplexInvoiceSupplierDetails)">
+      <Parameter Name="invoiceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertJournalAndPostings">
+      <Parameter Name="ACCiD" Mode="In" Type="Int32" />
+      <Parameter Name="acc_num" Mode="In" Type="String" />
+      <Parameter Name="Amount" Mode="In" Type="Double" />
+      <Parameter Name="Des" Mode="In" Type="String" />
+      <Parameter Name="type" Mode="In" Type="String" />
+      <Parameter Name="eDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="InsertFiscalYear">
+      <Parameter Name="from_n" Mode="In" Type="DateTime" />
+      <Parameter Name="to_n" Mode="In" Type="DateTime" />
+      <Parameter Name="to" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateFiscalYear">
+      <Parameter Name="to" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="ShowFiscalYear" ReturnType="Collection(TradingModel.ComplexFiscalYear)" />
+    <FunctionImport Name="AccountTransaction">
+      <Parameter Name="ACCID" Mode="In" Type="Int32" />
+      <Parameter Name="TYPEOFTRANSACTION" Mode="In" Type="String" />
+      <Parameter Name="REFRENCE" Mode="In" Type="String" />
+      <Parameter Name="TOTAL" Mode="In" Type="Double" />
+      <Parameter Name="E_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="PAYMENT" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="RefundInvoice">
+      <Parameter Name="invoiceId" Mode="In" Type="Int32" />
+      <Parameter Name="newAmount" Mode="In" Type="Double" />
+      <Parameter Name="accID" Mode="In" Type="Int32" />
+      <Parameter Name="newBalance" Mode="In" Type="Double" />
+      <Parameter Name="checktran" Mode="In" Type="String" />
+      <Parameter Name="exrate" Mode="In" Type="Double" />
+      <Parameter Name="PAID" Mode="In" Type="Double" />
+    </FunctionImport>
+    <FunctionImport Name="InsertPackingList">
+      <Parameter Name="invoiceId" Mode="In" Type="Int32" />
+      <Parameter Name="PackLisg" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ShowPackingList" ReturnType="Collection(TradingModel.ScalarPackingList)" />
+    <FunctionImport Name="ShowProductsOfPackingList" ReturnType="Collection(TradingModel.ComplexProductsOfPackingList)">
+      <Parameter Name="pck" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InventoryFilter" ReturnType="Collection(TradingModel.ComplexInventoryGrid)">
+      <Parameter Name="FROM" Mode="In" Type="DateTime" />
+      <Parameter Name="TO" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Account_Transaction">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Acc_id" Type="Int32" />
+    <Property Name="ref" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ref_no" Type="Int32" />
+    <Property Name="total" Type="Double" />
+    <Property Name="acc_total" Type="Double" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="BANK" Relationship="TradingModel.FK_Account_Transaction_BANK" FromRole="Account_Transaction" ToRole="BANK" />
+    <NavigationProperty Name="Invoice" Relationship="TradingModel.FK_Account_Transaction_Invoices" FromRole="Account_Transaction" ToRole="Invoices" />
+    <Property Type="Boolean" Name="active" />
+    <Property Type="String" Name="PAYMENT" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="payment_no" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="debit" />
+    <Property Type="Double" Name="credit" />
+  </EntityType>
+  <EntityType Name="BANK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ACC_NO" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ACC_NAME" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ACC_TYPE" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ACC_BALANCE" Type="Double" />
+    <Property Name="BRANCH" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BRANCH_CODE" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BANK_NO" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BANK_EMAIL" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="E_DATE" Type="DateTime" />
+    <Property Name="M_DATE" Type="DateTime" />
+    <Property Name="Currency" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Account_Transaction" Relationship="TradingModel.FK_Account_Transaction_BANK" FromRole="BANK" ToRole="Account_Transaction" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="BUYER">
+    <Key>
+      <PropertyRef Name="BUYER_ID" />
+    </Key>
+    <Property Name="BUYER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BUYER_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BUYER_CONTACT" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="BUYER_EMAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BUYER_ACCOUNT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BUYER_COMPANY" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BUYER_REMARKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="ORDERs" Relationship="TradingModel.FK_ORDER_BUYER" FromRole="BUYER" ToRole="ORDER" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="Exchanges" Relationship="TradingModel.FK_Exchange_Currency" FromRole="Currency" ToRole="Exchange" />
+    <NavigationProperty Name="Exchanges1" Relationship="TradingModel.FK_Exchange_Currency1" FromRole="Currency" ToRole="Exchange" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="Exchange">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CId_To" Type="Int32" />
+    <Property Name="CId_From" Type="Int32" />
+    <Property Name="Ex_Rate" Type="Double" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="Currency" Relationship="TradingModel.FK_Exchange_Currency" FromRole="Exchange" ToRole="Currency" />
+    <NavigationProperty Name="Currency1" Relationship="TradingModel.FK_Exchange_Currency1" FromRole="Exchange" ToRole="Currency" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="Frieght">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="company" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ref" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_SHIP_SUPP_Frieght" FromRole="Frieght" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="prd_id" Type="Int32" />
+    <Property Name="prd_quantity" Type="Int32" />
+    <Property Name="ship_date" Type="DateTime" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="PRODUCT" Relationship="TradingModel.FK_Inventory_PRODUCT" FromRole="Inventory" ToRole="PRODUCT" />
+    <Property Type="Int32" Name="ship_prd_id" />
+    <NavigationProperty Name="SHIP_PRD" Relationship="TradingModel.FK_Inventory_SHIP_PRD" FromRole="Inventory" ToRole="SHIP_PRD" />
+    <Property Type="String" Name="currency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="prd_cost" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SH_id" Type="Int32" />
+    <Property Name="in_type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ref" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="in_total" Type="Double" />
+    <NavigationProperty Name="Account_Transaction" Relationship="TradingModel.FK_Account_Transaction_Invoices" FromRole="Invoices" ToRole="Account_Transaction" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_Invoices_SHIP_SUPP" FromRole="Invoices" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+    <Property Type="String" Name="in_currency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="currency_total" />
+    <Property Type="Double" Name="ex_rate" />
+    <Property Type="Double" Name="in_paid" />
+    <Property Type="String" Name="pck" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ORDER">
+    <Key>
+      <PropertyRef Name="ORDER_ID" />
+    </Key>
+    <Property Name="ORDER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BUYER_ID" Type="Int32" />
+    <Property Name="order_name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="order_date" Type="DateTime" />
+    <Property Name="required_date" Type="DateTime" />
+    <Property Name="shipped_date" Type="DateTime" />
+    <Property Name="ref" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="BUYER" Relationship="TradingModel.FK_ORDER_BUYER" FromRole="ORDER" ToRole="BUYER" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_SHIP_SUPP_ORDER" FromRole="ORDER" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+    <Property Type="Double" Name="order_total" />
+    <NavigationProperty Name="Order_prod" Relationship="TradingModel.FK_Order_prod_ORDER" FromRole="ORDER" ToRole="Order_prod" />
+    <Property Type="Boolean" Name="invoice" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_SHIP_SUPP_Payments" FromRole="Payments" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+    <NavigationProperty Name="Order_prod" Relationship="TradingModel.FK_Order_prod_Payments" FromRole="Payment" ToRole="Order_prod" />
+  </EntityType>
+  <EntityType Name="PRODUCT">
+    <Key>
+      <PropertyRef Name="PRD_ID" />
+    </Key>
+    <Property Name="PRD_ID" Type="Int32" Nullable="false" />
+    <Property Name="PRD_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PRD_CP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PRD_SP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PRD_DESC" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PRD_CATEGORY" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="Inventories" Relationship="TradingModel.FK_Inventory_PRODUCT" FromRole="PRODUCT" ToRole="Inventory" />
+    <NavigationProperty Name="SHIP_PRD" Relationship="TradingModel.FK_SHIP_PRD_PRODUCT" FromRole="PRODUCT" ToRole="SHIP_PRD" />
+    <Property Type="Boolean" Name="active" />
+    <NavigationProperty Name="Order_prod" Relationship="TradingModel.FK_Order_prod_PRODUCT" FromRole="PRODUCT" ToRole="Order_prod" />
+  </EntityType>
+  <EntityType Name="SHIP_PRD">
+    <Key>
+      <PropertyRef Name="SHIP_PRD_ID" />
+    </Key>
+    <Property Name="SHIP_PRD_ID" Type="Int32" Nullable="false" />
+    <Property Name="PRD_ID" Type="Int32" />
+    <Property Name="PRD_CP" Type="Int32" />
+    <Property Name="PRD_REMARKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="PRODUCT" Relationship="TradingModel.FK_SHIP_PRD_PRODUCT" FromRole="SHIP_PRD" ToRole="PRODUCT" />
+    <Property Type="Int32" Name="Ship_id" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_SHIP_PRD_SHIP_SUPP" FromRole="SHIP_PRD" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+    <NavigationProperty Name="Inventories" Relationship="TradingModel.FK_Inventory_SHIP_PRD" FromRole="SHIP_PRD" ToRole="Inventory" />
+    <Property Type="String" Name="Currency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="type" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="units" />
+  </EntityType>
+  <EntityType Name="SHIP_SUPP">
+    <Key>
+      <PropertyRef Name="SHIP_SUPP_ID" />
+    </Key>
+    <Property Name="SHIP_SUPP_ID" Type="Int32" Nullable="false" />
+    <Property Name="SUPP_ID" Type="Int32" />
+    <Property Name="frieght_id" Type="Int32" />
+    <Property Name="SUPP_REMARKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="payment_type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="py_type_id" Type="Int32" />
+    <Property Name="sh_total" Type="Double" />
+    <Property Name="e_date" Type="DateTime" />
+    <Property Name="m_date" Type="DateTime" />
+    <NavigationProperty Name="Frieght" Relationship="TradingModel.FK_SHIP_SUPP_Frieght" FromRole="SHIP_SUPP" ToRole="Frieght" />
+    <NavigationProperty Name="Invoices" Relationship="TradingModel.FK_Invoices_SHIP_SUPP" FromRole="SHIP_SUPP" ToRole="Invoices" />
+    <NavigationProperty Name="Payment" Relationship="TradingModel.FK_SHIP_SUPP_Payments" FromRole="SHIP_SUPP" ToRole="Payments" />
+    <NavigationProperty Name="SUPPLIER" Relationship="TradingModel.FK_SHIP_SUPP_SUPPLIER" FromRole="SHIP_SUPP" ToRole="SUPPLIER" />
+    <Property Type="Int32" Name="order_id" />
+    <NavigationProperty Name="ORDER" Relationship="TradingModel.FK_SHIP_SUPP_ORDER" FromRole="SHIP_SUPP" ToRole="ORDER" />
+    <NavigationProperty Name="SHIP_PRD" Relationship="TradingModel.FK_SHIP_PRD_SHIP_SUPP" FromRole="SHIP_SUPP" ToRole="SHIP_PRD" />
+    <Property Type="Double" Name="service_charges" />
+    <Property Type="String" Name="shipment_type" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="currency" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="active" />
+    <Property Type="String" Name="Ship_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="ship_payment" />
+  </EntityType>
+  <EntityType Name="SUPPLIER">
+    <Key>
+      <PropertyRef Name="SUPP_ID" />
+    </Key>
+    <Property Name="SUPP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPP_NAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUPP_CONTACT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUPP_EMAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUPP_COMPANY" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUPP_REMARKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="E_DATE" Type="DateTime" />
+    <Property Name="M_DATE" Type="DateTime" />
+    <NavigationProperty Name="SHIP_SUPP" Relationship="TradingModel.FK_SHIP_SUPP_SUPPLIER" FromRole="SUPPLIER" ToRole="SHIP_SUPP" />
+    <Property Type="Boolean" Name="active" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Account_Transaction_BANK">
+    <End Role="BANK" Type="TradingModel.BANK" Multiplicity="0..1" />
+    <End Role="Account_Transaction" Type="TradingModel.Account_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BANK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Account_Transaction">
+        <PropertyRef Name="Acc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Transaction_Invoices">
+    <End Role="Invoices" Type="TradingModel.Invoice" Multiplicity="0..1" />
+    <End Role="Account_Transaction" Type="TradingModel.Account_Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoices">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Account_Transaction">
+        <PropertyRef Name="ref_no" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDER_BUYER">
+    <End Role="BUYER" Type="TradingModel.BUYER" Multiplicity="0..1" />
+    <End Role="ORDER" Type="TradingModel.ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BUYER">
+        <PropertyRef Name="BUYER_ID" />
+      </Principal>
+      <Dependent Role="ORDER">
+        <PropertyRef Name="BUYER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exchange_Currency">
+    <End Role="Currency" Type="TradingModel.Currency" Multiplicity="0..1" />
+    <End Role="Exchange" Type="TradingModel.Exchange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Exchange">
+        <PropertyRef Name="CId_To" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Exchange_Currency1">
+    <End Role="Currency" Type="TradingModel.Currency" Multiplicity="0..1" />
+    <End Role="Exchange" Type="TradingModel.Exchange" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Currency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Exchange">
+        <PropertyRef Name="CId_From" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_Frieght">
+    <End Role="Frieght" Type="TradingModel.Frieght" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Frieght">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="frieght_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_PRODUCT">
+    <End Role="PRODUCT" Type="TradingModel.PRODUCT" Multiplicity="0..1" />
+    <End Role="Inventory" Type="TradingModel.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoices_SHIP_SUPP">
+    <End Role="SHIP_SUPP" Type="TradingModel.SHIP_SUPP" Multiplicity="0..1" />
+    <End Role="Invoices" Type="TradingModel.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_SUPP">
+        <PropertyRef Name="SHIP_SUPP_ID" />
+      </Principal>
+      <Dependent Role="Invoices">
+        <PropertyRef Name="SH_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_Payments">
+    <End Role="Payments" Type="TradingModel.Payment" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payments">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="py_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_PRD_PRODUCT">
+    <End Role="PRODUCT" Type="TradingModel.PRODUCT" Multiplicity="0..1" />
+    <End Role="SHIP_PRD" Type="TradingModel.SHIP_PRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="SHIP_PRD">
+        <PropertyRef Name="PRD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_SUPP_SUPPLIER">
+    <End Role="SUPPLIER" Type="TradingModel.SUPPLIER" Multiplicity="0..1" />
+    <End Role="SHIP_SUPP" Type="TradingModel.SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUPPLIER">
+        <PropertyRef Name="SUPP_ID" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="SUPP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="ComplexProducts">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="PRODUCT_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="COST_PRICE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SALE_PRICE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DESCRIPTION" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CATEGORY" Nullable="true" />
+    <Property Type="DateTime" Name="e_date" Nullable="true" />
+    <Property Type="DateTime" Name="m_date" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexBuyer">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CONTACT" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ACCOUNT" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="COMPANY" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="REMARKS" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="e_date" Nullable="true" />
+    <Property Type="DateTime" Name="m_date" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexFreight">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="true" />
+    <Property Type="String" Name="COMPANY" Nullable="true" />
+    <Property Type="String" Name="REFRENCE" Nullable="true" />
+    <Property Type="String" Name="EMAIL" Nullable="true" />
+    <Property Type="DateTime" Name="e_date" Nullable="true" />
+    <Property Type="DateTime" Name="m_date" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexSupplier">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CONTACT" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="COMPANY" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="REMARKS" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="E_DATE" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="userid" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="password" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="e_date" />
+    <Property Type="DateTime" Name="m_date" />
+  </EntityType>
+  <ComplexType Name="ScalarLogin">
+    <Property Type="String" Name="password" Nullable="true" />
+  </ComplexType>
+  <Association Name="FK_SHIP_SUPP_ORDER">
+    <End Type="TradingModel.ORDER" Role="ORDER" Multiplicity="0..1" />
+    <End Type="TradingModel.SHIP_SUPP" Role="SHIP_SUPP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDER">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="SHIP_SUPP">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIP_PRD_SHIP_SUPP">
+    <End Type="TradingModel.SHIP_SUPP" Role="SHIP_SUPP" Multiplicity="0..1" />
+    <End Type="TradingModel.SHIP_PRD" Role="SHIP_PRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_SUPP">
+        <PropertyRef Name="SHIP_SUPP_ID" />
+      </Principal>
+      <Dependent Role="SHIP_PRD">
+        <PropertyRef Name="Ship_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="ComplexOrders">
+    <Property Type="String" Name="C_BUYER_" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ORDER_NAME" Nullable="true" />
+    <Property Type="DateTime" Name="ORDER_DATE" Nullable="true" />
+    <Property Type="DateTime" Name="REQ_DATE" Nullable="true" />
+    <Property Type="DateTime" Name="SHIP_DATE" Nullable="true" />
+    <Property Type="String" Name="REFRENCE" Nullable="true" />
+    <Property Type="Double" Name="TOTAL" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarBuyerNames">
+    <Property Type="String" Name="buyer_name" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="ComplexCurrency">
+    <Property Type="String" Name="Currency" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexExRate">
+    <Property Type="String" Name="currency_to" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="currency_from" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="Ex_rate" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexPayments">
+    <Property Type="String" Name="Payment_Types" Nullable="true" />
+  </ComplexType>
+  <Association Name="FK_Inventory_SHIP_PRD">
+    <End Type="TradingModel.SHIP_PRD" Role="SHIP_PRD" Multiplicity="0..1" />
+    <End Type="TradingModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SHIP_PRD">
+        <PropertyRef Name="SHIP_PRD_ID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="ship_prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="ScalarFreightName">
+    <Property Type="String" Name="name" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarCurrencyNames">
+    <Property Type="String" Name="name" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarProductNames">
+    <Property Type="String" Name="prd_name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="prd_cp" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="prd_sp" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="ScalarSupplierNames">
+    <Property Type="String" Name="supp_name" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="ScalarPaymentNames">
+    <Property Type="String" Name="type" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarProductCPSP">
+    <Property Type="String" Name="prd_cp" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="prd_sp" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="ScalarShipmentId">
+    <Property Type="Int32" Name="ship_supp_id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ScalarSupplierNameWithShipmentName">
+    <Property Type="String" Name="SUPP_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Ship_name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="id" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Order_prod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ord_id" />
+    <Property Type="Int32" Name="prd_id" />
+    <Property Type="Double" Name="prd_sp" />
+    <Property Type="Int32" Name="prd_unit" />
+    <Property Type="String" Name="currency" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="payment_id" />
+    <Property Type="String" Name="payment_type" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="total" />
+    <NavigationProperty Name="ORDER" Relationship="TradingModel.FK_Order_prod_ORDER" FromRole="Order_prod" ToRole="ORDER" />
+    <NavigationProperty Name="Payment" Relationship="TradingModel.FK_Order_prod_Payments" FromRole="Order_prod" ToRole="Payment" />
+    <NavigationProperty Name="PRODUCT" Relationship="TradingModel.FK_Order_prod_PRODUCT" FromRole="Order_prod" ToRole="PRODUCT" />
+  </EntityType>
+  <Association Name="FK_Order_prod_ORDER">
+    <End Type="TradingModel.ORDER" Role="ORDER" Multiplicity="0..1" />
+    <End Type="TradingModel.Order_prod" Role="Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDER">
+        <PropertyRef Name="ORDER_ID" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="ord_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_prod_Payments">
+    <End Type="TradingModel.Payment" Role="Payment" Multiplicity="0..1" />
+    <End Type="TradingModel.Order_prod" Role="Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="payment_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_prod_PRODUCT">
+    <End Type="TradingModel.PRODUCT" Role="PRODUCT" Multiplicity="0..1" />
+    <End Type="TradingModel.Order_prod" Role="Order_prod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="PRD_ID" />
+      </Principal>
+      <Dependent Role="Order_prod">
+        <PropertyRef Name="prd_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="ComplexOrderDetails">
+    <Property Type="String" Name="PRODUCT" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="COST" Nullable="true" />
+    <Property Type="Int32" Name="UNITS" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PAYMENT" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="TOTAL" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarOrderID">
+    <Property Type="Int32" Name="order_id" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="DummyView">
+    <Key>
+      <PropertyRef Name="BUYER_ID" />
+    </Key>
+    <Property Type="Int32" Name="BUYER_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BUYER_NAME" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BUYER_CONTACT" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="BUYER_EMAIL" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="ScalarBuyerNameWithOrderName">
+    <Property Type="String" Name="BUYER" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ORDER_NAME" Nullable="true" />
+    <Property Type="Double" Name="ORDER_TOTAL" Nullable="true" />
+    <Property Type="String" Name="REF" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarProductQuantity">
+    <Property Type="Int32" Name="prd_quantity" Nullable="true" />
+    <Property Type="Int32" Name="id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ScalarShipmentOrderID">
+    <Property Type="Int32" Name="ship_supp_id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="scalarBuyerNameOrderNameInvoice">
+    <Property Type="String" Name="BUYER_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="order_name" Nullable="true" />
+    <Property Type="String" Name="Ship_name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ScalarAccountType">
+    <Property Type="String" Name="type" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="ScalarAccountName">
+    <Property Type="String" Name="name" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexChartOfAccounts">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACCOUNT_ID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NAME" Nullable="true" />
+    <Property Type="String" Name="TYPE" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="OPENING_DATE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarAccountID">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="complexbank">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ACC_NUMBER" Nullable="true" />
+    <Property Type="String" Name="NAME" Nullable="true" />
+    <Property Type="String" Name="TYPE" Nullable="true" />
+    <Property Type="Double" Name="BALANCE" Nullable="true" />
+    <Property Type="String" Name="BRANCH" Nullable="true" />
+    <Property Type="String" Name="ADDRESS" Nullable="true" />
+    <Property Type="String" Name="CODE" Nullable="true" />
+    <Property Type="String" Name="CONTACT_NUMBER" Nullable="true" />
+    <Property Type="String" Name="EMAIL" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" />
+    <Property Type="DateTime" Name="OPENING_DATE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexInvoicesBuyer">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="REFRENCE" Nullable="true" />
+    <Property Type="Double" Name="TOTAL" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="EX_TOTAL" Nullable="true" />
+    <Property Type="Double" Name="EX_RATE" Nullable="true" />
+    <Property Type="Double" Name="PAID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexOrderPayments">
+    <Property Type="Int32" Name="ORDER_ID" Nullable="false" />
+    <Property Type="String" Name="BUYER_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="order_name" Nullable="true" />
+    <Property Type="Double" Name="order_total" Nullable="true" />
+    <Property Type="String" Name="ref" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexOrderDetailPayments">
+    <Property Type="String" Name="PRODUCT" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="PRICE" Nullable="true" />
+    <Property Type="Int32" Name="UNIT" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="TOTAL" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexInvoicesSupplier">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="REFRENCE" Nullable="true" />
+    <Property Type="Double" Name="TOTAL" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="EX_TOTAL" Nullable="true" />
+    <Property Type="Double" Name="EX_RATE" Nullable="true" />
+    <Property Type="Double" Name="PAID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexInvoiceSupplierDetails">
+    <Property Type="String" Name="SUPPLIER" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PRODUCTS" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="UNTIS" Nullable="true" />
+    <Property Type="Double" Name="PRICE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexFiscalYear">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="DateTime" Name="f_from" Nullable="true" />
+    <Property Type="DateTime" Name="f_to" Nullable="true" />
+    <Property Type="DateTime" Name="e_date" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ScalarPackingList">
+    <Property Type="String" Name="pck" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ComplexProductsOfPackingList">
+    <Property Type="String" Name="PRD_NAME" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="ComplexInventoryGrid">
+    <Property Type="String" Name="NAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="COST_PRICE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SALE_PRICE" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CATEGORY" Nullable="true" />
+    <Property Type="String" Name="CURRENCY" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="DEBIT" Nullable="true" />
+    <Property Type="Int32" Name="CREDIT" Nullable="true" />
+    <Property Type="Double" Name="COST_TRANSACTION" Nullable="true" />
+    <Property Type="DateTime" Name="DATE" Nullable="true" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,271 @@
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingSolutions\bin\Debug\log4net.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\log4net.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\log4net.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\log4net.dll
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceBuyer.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceBuyer.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InventoryTransactions.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Chart_Of_Accounts.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Bank.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Order.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Supplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GeneralJournal.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.UserControls.AddJournalEntry.resources
+E:\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+E:\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+E:\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+E:\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+E:\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+E:\TradingSolutions\TradingSolutions\bin\Debug\log4net.dll
+E:\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+E:\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Bank.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Chart_Of_Accounts.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GeneralJournal.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Order.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Supplier.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InventoryTransactions.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceBuyer.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.UserControls.AddJournalEntry.resources
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+E:\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.TrialBalance.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.IncomeStatement.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GenerateFinancialStatements.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.OwnerEquity.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.AccountTransactions.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.BalanceSheet.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.BackUpDB.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.AccountTransaction.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundDuty.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundSupplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListBuyer.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListSupplier.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.ShowProductsByPackingList.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.grdInventoryGrid.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.FiscalYearClosing.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.GeneralJournal.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.EndingBalance.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.AccountTransaction.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.BackUpDB.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Bank.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Chart_Of_Accounts.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.FiscalYearClosing.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GeneralJournal.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GenerateFinancialStatements.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.grdInventoryGrid.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListBuyer.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListSupplier.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Order.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Supplier.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundDuty.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundSupplier.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.ShowProductsByPackingList.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.EndingBalance.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.AccountTransactions.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.BalanceSheet.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.GeneralJournal.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.IncomeStatement.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InventoryTransactions.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceBuyer.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.OwnerEquity.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.TrialBalance.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.UserControls.AddJournalEntry.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe.config
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.exe
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.pdb
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\Trading.mdf
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\Trading_log.ldf
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.exe
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingSolutions.pdb
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.dll
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\bin\Debug\TradingBLL.pdb
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csprojResolveAssemblyReference.cache
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.AccountTransaction.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.BackUpDB.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Bank.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Buyer.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Chart_Of_Accounts.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Currency.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.FiscalYearClosing.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Form1.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Freight.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GeneralJournal.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.GenerateFinancialStatements.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.grdInventoryGrid.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Login.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Main_Page.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Order.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListBuyer.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.PackingListSupplier.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payments.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Order.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.Payment_To_Supplier.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Product.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundDuty.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.RefundSupplier.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.ShowProductsByPackingList.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Supplier.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Inventory.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Forms.To_Order.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Properties.Resources.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.EndingBalance.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.AccountTransactions.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.BalanceSheet.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.GeneralJournal.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.IncomeStatement.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InventoryTransactions.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceBuyer.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.CurrentInventory.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.InvoiceSupplier.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.OwnerEquity.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.Reports.TrialBalance.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.UserControls.AddJournalEntry.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\TradingSolutions.csproj.GenerateResource.Cache
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.cache
+F:\TFS\Source\Projects\TradingSolutions\TradingSolutions\obj\x86\Debug\RdlCompile.compiled

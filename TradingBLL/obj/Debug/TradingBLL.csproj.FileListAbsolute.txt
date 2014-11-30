@@ -1,0 +1,76 @@
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+c:\users\khurram\documents\visual studio 2010\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+E:\PROJECTS\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+E:\PROJECTS\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+E:\PROJECTS\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+E:\PROJECTS\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+E:\PROJECTS\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+D:\TradingSolutions\TradingSolutions\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+E:\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+E:\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+E:\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+E:\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+E:\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+E:\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+E:\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+E:\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+E:\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+E:\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+E:\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb
+C:\Users\MUNEEB ZULFIQAR\Downloads\TradingSolutions(FA)\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\Trading.mdf
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\Trading_log.ldf
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll.config
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.dll
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\TradingBLL.pdb
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\bin\Debug\log4net.dll
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csprojResolveAssemblyReference.cache
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.Properties.Resources.resources
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.csproj.GenerateResource.Cache
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.dll
+F:\TFS\Source\Projects\TradingSolutions\TradingBLL\obj\Debug\TradingBLL.pdb

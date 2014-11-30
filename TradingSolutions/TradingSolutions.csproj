@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2775262-6092-452C-BD3F-70BF875F0390}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TradingSolutions</RootNamespace>
+    <AssemblyName>TradingSolutions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\Users\Tahir\Desktop\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\PROJECTS\DARK BLUE\TMSSolution\TMS.UI\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012\Bin\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012\Bin\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012\Bin\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for WinForms Q2 2012\Bin\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AccountTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountTransaction.designer.cs">
+      <DependentUpon>AccountTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BackUpDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackUpDB.designer.cs">
+      <DependentUpon>BackUpDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank.designer.cs">
+      <DependentUpon>Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Buyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buyer.designer.cs">
+      <DependentUpon>Buyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Chart_Of_Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Chart_Of_Accounts.designer.cs">
+      <DependentUpon>Chart_Of_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Currency.designer.cs">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FiscalYearClosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FiscalYearClosing.Designer.cs">
+      <DependentUpon>FiscalYearClosing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Freight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Freight.designer.cs">
+      <DependentUpon>Freight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GeneralJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GeneralJournal.designer.cs">
+      <DependentUpon>GeneralJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GenerateFinancialStatements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GenerateFinancialStatements.designer.cs">
+      <DependentUpon>GenerateFinancialStatements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InventoryGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InventoryGrid.designer.cs">
+      <DependentUpon>InventoryGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main_Page.designer.cs">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Order.designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackingListBuyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackingListBuyer.designer.cs">
+      <DependentUpon>PackingListBuyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PackingListSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PackingListSupplier.designer.cs">
+      <DependentUpon>PackingListSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payments.designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payment_To_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payment_To_Order.designer.cs">
+      <DependentUpon>Payment_To_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payment_To_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payment_To_Supplier.designer.cs">
+      <DependentUpon>Payment_To_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product.designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RefundDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RefundDuty.designer.cs">
+      <DependentUpon>RefundDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RefundSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RefundSupplier.designer.cs">
+      <DependentUpon>RefundSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowProductsByPackingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowProductsByPackingList.designer.cs">
+      <DependentUpon>ShowProductsByPackingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier.designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\To_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\To_Inventory.designer.cs">
+      <DependentUpon>To_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\To_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\To_Order.designer.cs">
+      <DependentUpon>To_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\AccountTransactions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\BalanceSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BalanceSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\CurrenctInventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrenctInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDataSets\Dummy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dummy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\EndingBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EndingBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\IncomeStatement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncomeStatement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\InventoryTransactions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\InvoiceBuyer.cs">
+      <DependentUpon>InvoiceBuyer.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDataSets\InvoiceBuyer1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceBuyer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\InvoiceSupplier.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\OwnerEquity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OwnerEquity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\ReportGeneralJournal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportGeneralJournal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSets\TrialBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrialBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AccountTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountTransactions.Designer.cs">
+      <DependentUpon>AccountTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BalanceSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\BalanceSheet.Designer.cs">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CurrentInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\CurrentInventory.Designer.cs">
+      <DependentUpon>CurrentInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EndingBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\EndingBalance.Designer.cs">
+      <DependentUpon>EndingBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GeneralJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GeneralJournal.Designer.cs">
+      <DependentUpon>GeneralJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\IncomeStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\IncomeStatement.Designer.cs">
+      <DependentUpon>IncomeStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InventoryTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InventoryTransactions.Designer.cs">
+      <DependentUpon>InventoryTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InvoiceBuyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InvoiceBuyer.designer.cs">
+      <DependentUpon>InvoiceBuyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InvoiceSupplier.cs" />
+    <Compile Include="Reports\InvoiceSupplier.Designer.cs">
+      <DependentUpon>InvoiceSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OwnerEquity.cs" />
+    <Compile Include="Reports\OwnerEquity.Designer.cs">
+      <DependentUpon>OwnerEquity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TrialBalance.cs" />
+    <Compile Include="Reports\TrialBalance.Designer.cs">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddJournalEntry.cs" />
+    <Compile Include="UserControls\AddJournalEntry.Designer.cs">
+      <DependentUpon>AddJournalEntry.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AccountTransaction.resx">
+      <DependentUpon>AccountTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackUpDB.resx">
+      <DependentUpon>BackUpDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bank.resx">
+      <DependentUpon>Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Buyer.resx">
+      <DependentUpon>Buyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Chart_Of_Accounts.resx">
+      <DependentUpon>Chart_Of_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Currency.resx">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FiscalYearClosing.resx">
+      <DependentUpon>FiscalYearClosing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Freight.resx">
+      <DependentUpon>Freight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GeneralJournal.resx">
+      <DependentUpon>GeneralJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenerateFinancialStatements.resx">
+      <DependentUpon>GenerateFinancialStatements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InventoryGrid.resx">
+      <DependentUpon>InventoryGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main_Page.resx">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackingListBuyer.resx">
+      <DependentUpon>PackingListBuyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PackingListSupplier.resx">
+      <DependentUpon>PackingListSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payment_To_Order.resx">
+      <DependentUpon>Payment_To_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payment_To_Supplier.resx">
+      <DependentUpon>Payment_To_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RefundDuty.resx">
+      <DependentUpon>RefundDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RefundSupplier.resx">
+      <DependentUpon>RefundSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowProductsByPackingList.resx">
+      <DependentUpon>ShowProductsByPackingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\To_Inventory.resx">
+      <DependentUpon>To_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\To_Order.resx">
+      <DependentUpon>To_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\EndingBalance.rdlc" />
+    <EmbeddedResource Include="Reports\EndingBalance.resx">
+      <DependentUpon>EndingBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportOwnerEquity.rdlc" />
+    <EmbeddedResource Include="Reports\AccountTransaction.rdlc" />
+    <EmbeddedResource Include="Reports\AccountTransactions.resx">
+      <DependentUpon>AccountTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BalanceSheet.rdlc" />
+    <EmbeddedResource Include="Reports\BalanceSheet.resx">
+      <DependentUpon>BalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CurrentInventory.rdlc" />
+    <EmbeddedResource Include="Reports\GeneralJournal.rdlc" />
+    <EmbeddedResource Include="Reports\GeneralJournal.resx">
+      <DependentUpon>GeneralJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\IncomeStatement.rdlc" />
+    <EmbeddedResource Include="Reports\IncomeStatement.resx">
+      <DependentUpon>IncomeStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InventoryTransactions.rdlc" />
+    <EmbeddedResource Include="Reports\InventoryTransactions.resx">
+      <DependentUpon>InventoryTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceBuyer.rdlc" />
+    <EmbeddedResource Include="Reports\InvoiceBuyer.resx">
+      <DependentUpon>InvoiceBuyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CurrentInventory.resx">
+      <DependentUpon>CurrentInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceSupplier.rdlc" />
+    <EmbeddedResource Include="Reports\InvoiceSupplier.resx">
+      <DependentUpon>InvoiceSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OwnerEquity.resx">
+      <DependentUpon>OwnerEquity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TrialBalance.rdlc" />
+    <EmbeddedResource Include="Reports\TrialBalance.resx">
+      <DependentUpon>TrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AddJournalEntry.resx">
+      <DependentUpon>AddJournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportDataSets\AccountTransactions.xsc">
+      <DependentUpon>AccountTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\AccountTransactions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountTransactions.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\AccountTransactions.xss">
+      <DependentUpon>AccountTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\BalanceSheet.xsc">
+      <DependentUpon>BalanceSheet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\BalanceSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BalanceSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\BalanceSheet.xss">
+      <DependentUpon>BalanceSheet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\CurrenctInventory.xsc">
+      <DependentUpon>CurrenctInventory.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\CurrenctInventory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CurrenctInventory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\CurrenctInventory.xss">
+      <DependentUpon>CurrenctInventory.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportDataSets\Dummy.xsc">
+      <DependentUpon>Dummy.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\Dummy.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dummy.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\Dummy.xss">
+      <DependentUpon>Dummy.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\EndingBalance.xsc">
+      <DependentUpon>EndingBalance.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\EndingBalance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EndingBalance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\EndingBalance.xss">
+      <DependentUpon>EndingBalance.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\IncomeStatement.xsc">
+      <DependentUpon>IncomeStatement.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\IncomeStatement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncomeStatement.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\IncomeStatement.xss">
+      <DependentUpon>IncomeStatement.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InventoryTransactions.xsc">
+      <DependentUpon>InventoryTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InventoryTransactions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryTransactions.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\InventoryTransactions.xss">
+      <DependentUpon>InventoryTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InvoiceBuyer.xsc">
+      <DependentUpon>InvoiceBuyer.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InvoiceBuyer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceBuyer1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportDataSets\InvoiceBuyer.xss">
+      <DependentUpon>InvoiceBuyer.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InvoiceSupplier.xsc">
+      <DependentUpon>InvoiceSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\InvoiceSupplier.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceSupplier.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\InvoiceSupplier.xss">
+      <DependentUpon>InvoiceSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\OwnerEquity.xsc">
+      <DependentUpon>OwnerEquity.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\OwnerEquity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OwnerEquity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\OwnerEquity.xss">
+      <DependentUpon>OwnerEquity.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\ReportGeneralJournal.xsc">
+      <DependentUpon>ReportGeneralJournal.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\ReportGeneralJournal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportGeneralJournal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\ReportGeneralJournal.xss">
+      <DependentUpon>ReportGeneralJournal.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\TrialBalance.xsc">
+      <DependentUpon>TrialBalance.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSets\TrialBalance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrialBalance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportDataSets\TrialBalance.xss">
+      <DependentUpon>TrialBalance.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TradingBLL\TradingBLL.csproj">
+      <Project>{ADC3D05F-2C47-4B0C-9D0F-0BD0A91B64D7}</Project>
+      <Name>TradingBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BlueBackstageBgImage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
